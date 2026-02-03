@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival Mandala | Snehal’s Creative Corner</title>
+  <link rel="stylesheet" href="Festival.css" />
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Snehal’s Creative Corner</div>
+    <ul class="nav-links">
+      <li><a href="FrontPage.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="Festival.html" class="active">Festival Mandala</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Festival MANDALA SECTION -->
+  <section class="mandala-page">
+
+    <div class="mandala-header">
+      <h1>Festival Mandala</h1>
+      <p class="mandala-desc">
+         Mandalas inspired by festivals, celebrations, and cultural themes.
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="mandala-grid">
+
+      <!-- Mandala Item -->
+  <div class="mandala-item">
+  <img src="Images/Navratri.jpg" alt="Festival Mandala 01">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A mandala inspired by Navaratri, expressing devotion, rhythm, and festive energy.
+    </p>
+  </div>
+</div>
+
+<div class="mandala-item">
+  <img src="Images/GaneshaMandala.jpg" alt="Festival Mandala 02">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A mandala inspired by Lord Ganesha, symbolizing wisdom, positivity, and new beginnings.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/diwali.jpg" alt="Festival Mandala 03">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A celebratory mandala inspired by Diwali, representing light, hope, and harmony.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/Dussehra.jpg" alt="Festival Mandala 04">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A festival mandala reflecting victory, strength, and the triumph of good over evil.
+    </p>
+  </div>
+</div>
+
+
+<div class="mandala-item">
+  <img src="Images/Dhantrayodashi.jpg" alt="Festival Mandala 05">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+     A mandala inspired by Dhantrayodashi, symbolizing prosperity, wellness, and new beginnings.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+  </section>
+
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="Expanded Mandala">
+</div>
+
+
+<script>
+  const images = document.querySelectorAll('.mandala-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
+
+
+
+ <!-- footer -->
+<footer class="site-footer">
+  <p class="footer-title">Snehal’s Creative Corner</p>
+  <p class="footer-subtitle">Art & Mandalas by Snehal</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+    background-color: #000;
+}
+
+
+.navbar {
+  height: 80px;
+  margin-top: 12px;
+  top: 24px;
+  left: 0;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;     
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6);
+
+  border-radius: 16px;
+  z-index: 10;
+}
+
+/* LOGO */
+.logo {
+  font-size: 1.6rem;
+  color: #2FE6E0;
+}
+
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-size: 1.1 rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2FE6E0;
+}
+
+
+.mandala-page {
+  padding: 60px 8% 100px;
+  background-color: #000;
+}
+
+/* HEADER */
+.mandala-header {
+  margin-bottom: 50px;
+}
+
+.mandala-header h1 {
+  font-size: 3.2rem;
+  color: #2FE6E0;
+  margin-bottom: 10px;
+}
+
+.mandala-desc {
+  color: #aaa;
+  font-size: 1.1rem;
+  max-width: 520px;
+}
+
+/* GRID */
+/* GRID */
+.mandala-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.mandala-item {
+  border-radius: 14px;
+  overflow: hidden; 
+  border: 1px solid rgba(20, 40, 55, 0.55);
+}
+
+/* IMAGE — optimized for 2000×2000 */
+.mandala-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;     
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover (subtle) */
+.mandala-item:hover img {
+  transform: scale(1.04);
+}
+
+/* INFO */
+.mandala-info {
+  padding: 14px 4px 0;
+}
+
+.mandala-desc {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.video-link {
+  font-size: 0.95rem;
+  color: #2FE6E0;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.video-link:hover {
+  opacity: 0.75;
+}
+
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+
+/* FOOTER */
+.site-footer {
+  padding: 32px 8%;
+  background-color: #000;
+  text-align: center;
+}
+
+.footer-title {
+  color: #e6e6e6;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.footer-subtitle {
+  color: #888;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .mandala-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mandala-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

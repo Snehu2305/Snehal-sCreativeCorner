@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Round Mandala | Snehal’s Creative Corner</title>
+  <link rel="stylesheet" href="roundMandala.css" />
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Snehal’s Creative Corner</div>
+    <ul class="nav-links">
+      <li><a href="FrontPage.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="roundMandala.html" class="active">Round Mandala</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ROUND MANDALA SECTION -->
+  <section class="mandala-page">
+
+    <div class="mandala-header">
+      <h1>Round Mandala</h1>
+      <p class="mandala-desc">
+        Traditional circular mandalas inspired by symmetry, balance, and calm.
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="mandala-grid">
+
+      <!-- Mandala Item -->
+  <div class="mandala-item">
+  <img src="Images/blackround.jpg" alt="Round Mandala 01">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      Black ink round mandala focused on symmetry and balance.
+    </p>
+  </div>
+</div>
+
+<div class="mandala-item">
+  <img src="Images/blackround1.jpg" alt="Round Mandala 02">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      Intricate circular patterns created to bring harmony and mindfulness.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/bluePink.jpg" alt="Round Mandala 03">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A circular mandala where blue and pink meet in calm, rhythmic symmetry.
+    </p>
+
+
+    <a href="https://youtube.com/shorts/ysH5cnGbARc?si=IRacKZgRTVSDjKI1"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/blueblack.jpg" alt="Round Mandala 04">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A blue and black mandala symbolizing depth, calm, and focused energy.
+    </p>
+  </div>
+</div>
+
+
+<div class="mandala-item">
+  <img src="Images/colorRound.jpg" alt="Round Mandala 05">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A multi-layered round mandala designed with intricate repetitive patterns.
+    </p>
+  </div>
+</div>
+
+
+<div class="mandala-item">
+  <img src="Images/grometry.jpg" alt="Round Mandala 06">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+     Fine lines forming a balanced and rhythmic mandala pattern.
+    </p>
+
+   
+    <a href="https://youtube.com/shorts/m5aUb9kyQlc?si=t9S_-339l3Jtlu4H"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/round1.jpg" alt="Round Mandala 07">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A detailed mandala expressing patience, focus, and rhythmic repetition.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/roundMandala.jpeg" alt="Round Mandala 08">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+     A detailed black-ink round mandala focused on symmetry, repetition, and balanced pattern work.
+    </p>
+
+    <a href="https://youtu.be/f896v9U94W4?si=vbfD6RpBo4YRI6Yw"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+ 
+
+
+<div class="mandala-item">
+  <img src="Images/NotoolMandala.jpeg" alt="Round Mandala 09">
+ <div class="mandala-info">
+    <p class="mandala-desc">
+     A minimal hand-drawn mandala expressing balance and symmetry through clean red linework.
+    </p>
+
+    
+    <a href="https://youtu.be/qXv9VeVY7H4?si=DF4sOmkEwLjLewXD"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+
+    </div>
+
+  </section>
+
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="Expanded Mandala">
+</div>
+
+
+<script>
+  const images = document.querySelectorAll('.mandala-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
+
+
+
+
+<!-- footer -->
+<footer class="site-footer">
+  <p class="footer-title">Snehal’s Creative Corner</p>
+  <p class="footer-subtitle">Art & Mandalas by Snehal</p>
+</footer>
+
+</body>
+</html>

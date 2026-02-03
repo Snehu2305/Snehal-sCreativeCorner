@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Mandala | Snehal’s Creative Corner</title>
+  <link rel="stylesheet" href="creative.css" />
+
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+  <nav class="navbar">
+    <div class="logo">Snehal’s Creative Corner</div>
+    <ul class="nav-links">
+      <li><a href="FrontPage.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="creative.html" class="active">Creative Mandala</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CREATIVE MANDALA SECTION -->
+  <section class="mandala-page">
+
+    <div class="mandala-header">
+      <h1>Creative Mandala</h1>
+      <p class="mandala-desc">
+         Experimental mandalas exploring patterns, forms, and creative freedom.
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="mandala-grid">
+
+      <!-- Mandala Item -->
+  <div class="mandala-item">
+  <img src="Images/star.jpg" alt="Creative Mandala 01">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A star-inspired mandala exploring symmetry through radiating geometric patterns.
+    </p>
+
+     <a href="https://youtube.com/shorts/aJD8vOUsgnM?si=ojX7DZsILbj9hXW1"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+<div class="mandala-item">
+  <img src="Images/pandaMandala.jpg" alt="Creative Mandala 02">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+     A playful mandala inspired by the panda form, blending illustration with pattern work.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="mandala-item">
+  <img src="Images/stickyNote.jpg" alt="Creative Mandala 03">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A creative mandala drawn on a sticky note, turning a simple surface into detailed art.
+    </p>
+
+   
+    <a href="https://youtube.com/shorts/KKHLQbjqiwc?si=xB_xm36gOznDCIPc"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+
+<div class="mandala-item">
+  <img src="Images/fullPage.jpg" alt="Creative Mandala 04">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A full-page mandala designed to immerse the viewer in symmetry and detailed line work.
+    </p>
+
+       <a href="https://youtube.com/shorts/GBSy7Foougs?si=EF_eWYn6Vm6sYy4a"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video part1
+    </a>
+
+    <a href="https://youtube.com/shorts/N76m_CFbyAk?si=_65lUTD28G0xzmxm"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video part2
+    </a>
+
+  </div>
+</div>
+
+
+<div class="mandala-item">
+  <img src="Images/Lotus.jpeg" alt="Creative Mandala 05">
+
+  <div class="mandala-info">
+    <p class="mandala-desc">
+      A lotus-inspired mandala symbolizing balance, growth, and calm symmetry
+    </p>
+
+   
+    <a href="https://youtube.com/shorts/aQ1IKTmvXZ4?si=urLfNkUPaLetHJCE"
+       class="video-link"
+       target="_blank">
+        ▶ Watch process video
+    </a>
+  </div>
+</div>
+
+    </div>
+
+  </section>
+
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="Expanded Mandala">
+</div>
+
+
+<script>
+  const images = document.querySelectorAll('.mandala-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
+
+
+
+<!-- footer -->
+<footer class="site-footer">
+  <p class="footer-title">Snehal’s Creative Corner</p>
+  <p class="footer-subtitle">Art & Mandalas by Snehal</p>
+</footer>
+
+</body>
+</html>
+
